@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Illuminati Guild</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <header>
+    <h1>The Illuminati</h1>
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#raids">Raid Sign-Up</a></li>
+        <li><a href="#discord">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>Welcome to The Illuminati</h2>
+    <p>The Illuminati is a World of Warcraft guild focused on raiding, community building, and progression. Join us in our journey!</p>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Formed in the heat of battle, The Illuminati guild stands for unity, strength, and excellence in raiding. Join us to become part of a winning team!</p>
+  </section>
+
+  <section id="raids">
+    <h2>Raid Sign-Up</h2>
+    <p>Ready for the next raid? Sign up below to secure your spot!</p>
+    <form action="/signup" method="POST">
+      <label for="name">Character Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="role">Role:</label><br>
+      <select id="role" name="role" required>
+        <option value="tank">Tank</option>
+        <option value="healer">Healer</option>
+        <option value="dps">DPS</option>
+      </select><br>
+
+      <label for="date">Raid Date:</label><br>
+      <input type="date" id="date" name="date" required><br><br>
+
+      <input type="submit" value="Sign Up">
+    </form>
+  </section>
+
+  <section id="discord">
+    <h2>Join Our Discord</h2>
+    <p>Join the conversation and stay up to date with guild news!</p>
+    <a href="https://discord.gg/YOURDISCORDLINK" class="discord-link">Join Our Discord</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 The Illuminati Guild. All rights reserved.</p>
+  </footer>
+</body>
+</html>
